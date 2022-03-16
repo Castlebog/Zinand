@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Open Sans', sans-serif;;
+}
+body{
+    position: relative;
+    width: 100%;
+    height: 1200px;
+    background: linear-gradient(180deg, #F0F4F9 34.02%, rgba(240, 244, 249, 0.5) 102.68%);
+}
+.form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+.log-container{
+    width: 380px;
+    height: 500px;
+    background: linear-gradient(312.9deg, rgba(255, 255, 255, 0.3) 
+    4.49%, rgba(233, 240, 247, 0.3) 95.45%), #E9F0F7;
+    box-shadow: 5.6px 5.6px 22.4px rgba(138, 155, 189, 0.48), 
+    -7px -7px 25.2px #FFFFFF;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 150px;
+}
+.img-logo{
+    width: 250px;
+    margin-bottom: 50px;
+}
+.log-container h3{
+    padding: 10px;
+    margin-bottom: 30px!important;
+    font-size: 16px;
+    color: #192A53;
+    font-weight: bold;
+}
+.my-form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    width: 300px!important;
+    height: 35px!important;
+    margin: 10px!important;
+    padding-left: 10px;
+    border-radius: 5px;
+    background: #EBF2F8;
+    box-shadow: inset -5.69412px -5.69412px 12.8118px rgba(255, 255, 255, 0.6), 
+    inset 5.69412px 5.69412px 19.9294px #C5D7EE;
+}
+.my-form input{
+    border: 1px solid rgba(255, 255, 255, 0.623);
+}
+input::placeholder{
+    color: #1a2b5273;
+}
+.log-container a{
+    margin: 10px;
+    color: #3DAFF9;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(92.91deg, rgba(233, 240, 247, 0.3) 1.35%, rgba(255, 255, 255, 0.3) 98.87%), #E9F0F7;
+    box-shadow: 3.47px 3.47px 13.86px rgba(138, 155, 189, 0.48), -4.33px -4.33px 15.6px #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 215px;
+    margin-top: 40px;
+    text-decoration: none;
+}
+.log-container a:hover{
+    color: #fff;
+    background: #3DAFF9;
+    box-shadow: 3.47px 3.47px 13.86px rgba(138, 155, 189, 0.48), 
+    -4.33px -4.33px 15.6px #FFFFFF;
+}
+.log-container p{
+    font-size: 13px;
+    color: #192A53;
+    margin-left: 160px;
+}
