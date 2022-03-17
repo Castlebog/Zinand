@@ -173,25 +173,19 @@ body{
     top: 120px;
     left: 270px;
     display: grid;
-    grid-template-rows: auto auto;
-    gap: 10px;
-}
-.up{
-    width: 800px;
-    height: 285px;
-    display: grid;
     grid-template-columns: auto auto;
     gap: 10px;
 }
 .deparment{
-    width: 395px;
-    height: 285px;
+    width: 490px;
+    height: 570px;
     background: linear-gradient(312.9deg, rgba(255, 255, 255, 0.3) 4.49%, rgba(233, 240, 247, 0.3) 95.45%), #E9F0F7;
     box-shadow: 4px 4px 16px rgba(138, 155, 189, 0.48), -5px -5px 18px #FFFFFF;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    justify-items: center;
 }
 .deparment p{
     font-size: 15px;
@@ -199,117 +193,47 @@ body{
     color: #192A53;
     margin: 15px;
 }
-.card-container{
-    width: 370px;
-    height: 225px;
-    background: #EEF3F8;
-    box-shadow: inset -4px -4px 9px rgba(255, 255, 255, 0.88), inset 4px 4px 14px #C1D5EE;
-    border-radius: 9px; 
+.bar-chart{
+    width: 470px;
+    height: 250px;
+    border-radius: 9px;
+    background: #697591;
+    margin-bottom: 10px;
 }
-/* INCLUIR CONTENIDO CARD CONTAINER */
+/* INCLUIR GRAFICA DE BARRAS */
 
-.alerts{
-    width: 395px;
-    height: 285px;
-    background: linear-gradient(312.9deg, rgba(255, 255, 255, 0.3) 4.49%, rgba(233, 240, 247, 0.3) 95.45%), #E9F0F7;
-    box-shadow: 4px 4px 16px rgba(138, 155, 189, 0.48), -5px -5px 18px #FFFFFF;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.alerts p{
-    font-size: 15px;
-    font-weight: normal;
-    color: #192A53;
-    margin: 15px;
-}
-/* INCLUIR CONTENIDO CARD CONTAINER */
-
-.resum{
-    width: 800px;
-    height: 285px;
-    background: linear-gradient(312.9deg, rgba(255, 255, 255, 0.3) 4.49%, rgba(233, 240, 247, 0.3) 95.45%), #E9F0F7;
-    box-shadow: 4px 4px 16px rgba(138, 155, 189, 0.48), -5px -5px 18px #FFFFFF;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.resum-container{
-    width: 800px;
-    height: 285px;
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 5px;
-    
-}
-.check{
-    width: 232px;
-    height: 285px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
-.check p{
-    font-size: 15px;
-    font-weight: normal;
-    color: #192A53;
-    margin: 15px;
-}
-.check-container{
-    width: 215px;
-    height: 225px;
-    background: #EEF3F8;
-    box-shadow: inset -4px -4px 9px rgba(255, 255, 255, 0.88), inset 4px 4px 14px #C1D5EE;
-    border-radius: 9px; 
-}
-/* INCLUIR CONTENIDO APROBACIONES */
-
-.record{
-    width: 232px;
-    height: 285px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.record p{
-    font-size: 15px;
-    font-weight: normal;
-    color: #192A53;
-    margin: 15px;
-}
-.record-container{
-    width: 215px;
-    height: 225px;
-    background: #EEF3F8;
-    box-shadow: inset -4px -4px 9px rgba(255, 255, 255, 0.88), inset 4px 4px 14px #C1D5EE;
-    border-radius: 9px; 
-}
-/* INCLUIR CONTENIDO RECORD */
-
-.budget{
-    width: 330px;
-    height: 285px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.budget p{
-    font-size: 15px;
-    font-weight: normal;
-    color: #192A53;
-    margin: 15px;
-}
-.budget-container{
-    width: 310px;
-    height: 225px;
+.contract-container{
+    width: 470px;
+    height: 230px;
     background: #EEF3F8;
     box-shadow: inset -4px -4px 9px rgba(255, 255, 255, 0.88), inset 4px 4px 14px #C1D5EE;
     border-radius: 9px;
+    margin-bottom: 10px;
 }
-/* INCLUIR CONTENIDO BALANCE GENERAL */
+/* INCLUIR CONTENIDO CONTRATOS */
+
+.list{
+    width: 290px;
+    height: 570px;
+    background: linear-gradient(312.9deg, rgba(255, 255, 255, 0.3) 4.49%, rgba(233, 240, 247, 0.3) 95.45%), #E9F0F7;
+    box-shadow: 4px 4px 16px rgba(138, 155, 189, 0.48), -5px -5px 18px #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list p{
+    font-size: 15px;
+    font-weight: normal;
+    color: #192A53;
+    margin: 15px;
+}
+.depto-list{
+    width: 270px;
+    height: 700px;
+    background: #EEF3F8;
+    box-shadow: inset -4px -4px 9px rgba(255, 255, 255, 0.88), inset 4px 4px 14px #C1D5EE;
+    border-radius: 9px;
+    margin-bottom: 10px;
+}
+/* INCLUIR LISTA DEPTOS */

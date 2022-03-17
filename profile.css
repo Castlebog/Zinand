@@ -68,7 +68,7 @@ body{
 
 /* DROPDOWN */
 
-.dropdown{
+/* .dropdown{
     width: 260px;
     height: 40px;
     background: linear-gradient(312.9deg, rgba(255, 255, 255, 0.3) 4.49%, rgba(233, 240, 247, 0.3) 95.45%), #E9F0F7;
@@ -117,7 +117,7 @@ body{
 }
 .dropdown:hover .dropdown-content{
     display: block;
-}
+} */
 
 /* USER */
 
@@ -173,19 +173,32 @@ body{
     top: 120px;
     left: 270px;
     display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    justify-items: center;
+}
+.profile-container{
+    width: 300px;
+    height: 570px;
+    display: grid;
     grid-template-rows: auto auto;
     gap: 10px;
 }
-.up{
-    width: 800px;
-    height: 285px;
+.profile{
+    width: 300px;
+    height: 120px;
+    background: linear-gradient(312.9deg, rgba(255, 255, 255, 0.3) 4.49%, rgba(233, 240, 247, 0.3) 95.45%), #E9F0F7;
+    box-shadow: 4px 4px 16px rgba(138, 155, 189, 0.48), -5px -5px 18px #FFFFFF;
+    border-radius: 10px;
     display: grid;
     grid-template-columns: auto auto;
     gap: 10px;
 }
-.deparment{
-    width: 395px;
-    height: 285px;
+/* INCLUIR CONTENIDO PERFIL */
+
+.settings{
+    width: 300px;
+    height: 440px;
     background: linear-gradient(312.9deg, rgba(255, 255, 255, 0.3) 4.49%, rgba(233, 240, 247, 0.3) 95.45%), #E9F0F7;
     box-shadow: 4px 4px 16px rgba(138, 155, 189, 0.48), -5px -5px 18px #FFFFFF;
     border-radius: 10px;
@@ -193,123 +206,76 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.deparment p{
+.settings p{
     font-size: 15px;
     font-weight: normal;
     color: #192A53;
     margin: 15px;
 }
-.card-container{
-    width: 370px;
-    height: 225px;
-    background: #EEF3F8;
-    box-shadow: inset -4px -4px 9px rgba(255, 255, 255, 0.88), inset 4px 4px 14px #C1D5EE;
-    border-radius: 9px; 
-}
-/* INCLUIR CONTENIDO CARD CONTAINER */
-
-.alerts{
-    width: 395px;
-    height: 285px;
-    background: linear-gradient(312.9deg, rgba(255, 255, 255, 0.3) 4.49%, rgba(233, 240, 247, 0.3) 95.45%), #E9F0F7;
-    box-shadow: 4px 4px 16px rgba(138, 155, 189, 0.48), -5px -5px 18px #FFFFFF;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.alerts p{
-    font-size: 15px;
-    font-weight: normal;
-    color: #192A53;
-    margin: 15px;
-}
-/* INCLUIR CONTENIDO CARD CONTAINER */
-
-.resum{
-    width: 800px;
-    height: 285px;
-    background: linear-gradient(312.9deg, rgba(255, 255, 255, 0.3) 4.49%, rgba(233, 240, 247, 0.3) 95.45%), #E9F0F7;
-    box-shadow: 4px 4px 16px rgba(138, 155, 189, 0.48), -5px -5px 18px #FFFFFF;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.resum-container{
-    width: 800px;
-    height: 285px;
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 5px;
-    
-}
-.check{
-    width: 232px;
-    height: 285px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
-.check p{
-    font-size: 15px;
-    font-weight: normal;
-    color: #192A53;
-    margin: 15px;
-}
-.check-container{
-    width: 215px;
-    height: 225px;
-    background: #EEF3F8;
-    box-shadow: inset -4px -4px 9px rgba(255, 255, 255, 0.88), inset 4px 4px 14px #C1D5EE;
-    border-radius: 9px; 
-}
-/* INCLUIR CONTENIDO APROBACIONES */
-
-.record{
-    width: 232px;
-    height: 285px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.record p{
-    font-size: 15px;
-    font-weight: normal;
-    color: #192A53;
-    margin: 15px;
-}
-.record-container{
-    width: 215px;
-    height: 225px;
-    background: #EEF3F8;
-    box-shadow: inset -4px -4px 9px rgba(255, 255, 255, 0.88), inset 4px 4px 14px #C1D5EE;
-    border-radius: 9px; 
-}
-/* INCLUIR CONTENIDO RECORD */
-
-.budget{
-    width: 330px;
-    height: 285px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.budget p{
-    font-size: 15px;
-    font-weight: normal;
-    color: #192A53;
-    margin: 15px;
-}
-.budget-container{
-    width: 310px;
-    height: 225px;
+.settings-container{
+    width: 280px;
+    height: 380px;
     background: #EEF3F8;
     box-shadow: inset -4px -4px 9px rgba(255, 255, 255, 0.88), inset 4px 4px 14px #C1D5EE;
     border-radius: 9px;
 }
-/* INCLUIR CONTENIDO BALANCE GENERAL */
+/* INCLUIR CONTENIDO AJUSTES */
+
+.management-container{
+    width: 490px;
+    height: 570px;
+    background: linear-gradient(312.9deg, rgba(255, 255, 255, 0.3) 4.49%, rgba(233, 240, 247, 0.3) 95.45%), #E9F0F7;
+    box-shadow: 4px 4px 16px rgba(138, 155, 189, 0.48), -5px -5px 18px #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.management-container p{
+    font-size: 15px;
+    font-weight: normal;
+    color: #192A53;
+    margin: 15px;
+}
+.management{
+    width: 490px;
+    height: 230px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.budget{
+    width: 470px;
+    height: 130px;
+    background: #EEF3F8;
+    box-shadow: inset -4px -4px 9px rgba(255, 255, 255, 0.88), inset 4px 4px 14px #C1D5EE;
+    border-radius: 9px;
+}
+/* INCLUIR CONTENIDO GERENCIA */
+
+.benefit-expenses{
+    width: 490px;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.resum{
+    width: 470px;
+    height: 250px;
+    background: #EEF3F8;
+    box-shadow: inset -4px -4px 9px rgba(255, 255, 255, 0.88), inset 4px 4px 14px #C1D5EE;
+    border-radius: 9px;
+}
+/* INCLUIR CONTENIDO INGRESOS SCROLL-Y */
+
+.button-container{
+    width: 315px;
+    height: 70px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;  
+}
+/* INCLUIR BOTONES */

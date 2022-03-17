@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipos</title>
-    <link rel="stylesheet" href="teams.css">
+    <title>Reportes</title>
+    <link rel="stylesheet" href="reportes.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -13,7 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
-    
 </head>
 <body>
     <div class="general-container">
@@ -77,43 +76,55 @@
             </div>
         </div>
         <div class="element-container">
-            <div class="up">
-                <div class="deparment">
-                    <p>Departamento</p>
-                    <div class="card-container">
-                        <!-- INCLUIR CONTENIDO CARD CONTAINER -->
+            <div class="preferences-container">
+                <div class="resum">
+                    <p>Fecha</p>
+                    <div class="resum-container">
+                        <div class="line-chart">
+                            <!-- INCLUIR GRAFICA DE LINEAS -->
+                        </div>
+                        <div class="resum-list">
+                            <!-- INCLUIR LISTA DEPTOS SCROLL-Y -->
+                        </div>
                     </div>
                 </div>
-                <div class="alerts">
-                    <p>Alertas</p>
-                    <div class="card-container">
-                        <!-- INCLUIR CONTENIDO CARD CONTAINER -->
+                <div class="preferences">
+                    <p>Reporte Personalizado</p>
+                    <div class="console-container">
+                        <div class="console">
+                            <div class="report-type">
+                                <p>Tipo Reporte</p>
+                                <ul>
+                                    <!-- <input type="checkbox" id="checkbox" placeholder="Facturación"/> -->
+                                    <li>Facturación</li>
+                                    <li>Control Personal</li>
+                                    <li>Financiero</li>
+                                </ul>
+                            </div>
+                            <div class="graph-type">
+                                <p>Tipo de Gráfica</p>
+                                <ul>
+                                    <li>Circular</li>
+                                    <li>Barras</li>
+                                    <li>Histograma</li>
+                                </ul>
+                            </div>
+                            <div class="calendar">
+                                <input type="date" id="date" name="name"/>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <!-- INCLUIR BOTONES -->
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="resum">
-                <div class="resum-container">
-                    <div class="check">
-                        <p>Aprobaciones</p>
-                        <div class="check-container">
-                            <!-- INCLUIR CONTENIDO APROBACIONES -->
-                        </div>
-                    </div>
-                    <div class="record">
-                        <p>Historial</p>
-                        <div class="record-container">
-                            <!-- INCLUIR CONTENIDO RECORD -->
-                        </div>
-                    </div>
-                    <div class="budget">
-                        <p>Balance General</p>
-                        <div class="budget-container">
-                            <!-- INCLUIR CONTENIDO BALANCE GENERAL -->
-                        </div>
-                    </div>
+            <div class="list">
+                <p>Historial</p>
+                <div class="list-container">
+
                 </div>
             </div>
         </div>
-    </div>
 </body>
 </html>
