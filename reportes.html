@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facturacion</title>
-    <link rel="stylesheet" href="facturacion.css">
+    <title>Reportes</title>
+    <link rel="stylesheet" href="reportes.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -76,52 +76,55 @@
             </div>
         </div>
         <div class="element-container">
-            <div class="pay">
-                <p>Cuentas por Pagar / Cobrar</p>
-                <div class="pay-container">
-                    <!-- INCLUIR GRAFICA DE BARRAS Y BOTONES -->
-                    <div class="skill">
-                        <div class="outer">
-                            <div class="inner">
-                                <div id="number">
-                                    
-                                </div>
+            <div class="preferences-container">
+                <div class="resum">
+                    <p>Fecha</p>
+                    <div class="resum-container">
+                        <div class="line-chart">
+                            <!-- INCLUIR GRAFICA DE LINEAS -->
+                        </div>
+                        <div class="resum-list">
+                            <!-- INCLUIR LISTA DEPTOS SCROLL-Y -->
+                        </div>
+                    </div>
+                </div>
+                <div class="preferences">
+                    <p>Reporte Personalizado</p>
+                    <div class="console-container">
+                        <div class="console">
+                            <div class="report-type">
+                                <p>Tipo Reporte</p>
+                                <ul>
+                                    <!-- <input type="checkbox" id="checkbox" placeholder="Facturación"/> -->
+                                    <li>Facturación</li>
+                                    <li>Control Personal</li>
+                                    <li>Financiero</li>
+                                </ul>
+                            </div>
+                            <div class="graph-type">
+                                <p>Tipo de Gráfica</p>
+                                <ul>
+                                    <li>Circular</li>
+                                    <li>Barras</li>
+                                    <li>Histograma</li>
+                                </ul>
+                            </div>
+                            <div class="calendar">
+                                <input type="date" id="date" name="name"/>
                             </div>
                         </div>
-                    
-                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                            <defs>
-                               <linearGradient id="GradientColor">
-                                  <stop offset="0%" stop-color="#e91e63" />
-                                  <stop offset="100%" stop-color="#673ab7" />
-                               </linearGradient>
-                            </defs>
-                            <circle cx="80" cy="80" r="70" stroke-linecap="round" />
-                        </svg>
+                        <div class="buttons">
+                            <!-- INCLUIR BOTONES -->
+                        </div>
                     </div>
-                    <script>
-                    let number = document.getElementById("number");
-                    let counter = 0;
-                    setInterval(() =>{
-                        if(counter == 65){
-                            clearInterval();
-                        }else{
-                            counter += 1;
-                            number.innerHTML = counter + "%"
-                        }
-                    }, 30);
-                </script>
                 </div>
             </div>
-            <div class="date-alert">
-                <div class="calendar-container">
-                    <!-- INCLUIR CALENDARIO -->
-                </div>
-                <div class="calendar-alert">
-                    <!-- ALERTAS Y SCROLL-X -->
+            <div class="list">
+                <p>Historial</p>
+                <div class="list-container">
+
                 </div>
             </div>
         </div>
-        
 </body>
 </html>

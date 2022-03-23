@@ -339,7 +339,7 @@ svg {
 /* BARRAS */
 
 .budget {
-  position;
+  position: absolute;
   color: #8b9eb0;
   width: 25px;
   height: 175px;
