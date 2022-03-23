@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanzas y Fiscal</title>
+    <link rel="stylesheet" href="finanzas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="general-container">
+        <nav class="navbar">
+            <img src="assets/img/Zinand logo.png">
+            <a class="button" href="dashboard.html"> <i class="fa-solid fa-table-columns"></i></i>General</a>
+            <a class="button" href="teams.html"> <i class="fi fi-sr-user"></i>Equipos</a>
+            <a class="button" href="finanzas.html"> <i class="fi fi-br-chart-histogram"></i>Finanzas y Fiscal</a>
+            <a class="button" href="control.html"> <i class="fi fi-sr-head-side-thinking"></i>Control Personal</a>
+            <a class="button" href="facturacion.html"> <i class="fi fi-br-list-check"></i>Facturación</a>
+            <a class="button" href="reportes.html"> <i class="fi fi-sr-document"></i>Reportes</a>
+        </nav>
+        <div class="user">
+            <div class="dropdown">
+                <button class="dropbtn">Departamento
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Marketing</a>
+                    <a href="#">Ventas</a>
+                    <a href="#">Legal</a>
+                    <a href="#">RRHH</a>
+                    <a href="#">Logística</a>
+                    <a href="#">Compras</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Presupuesto
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">$0 - $50K</a>
+                    <a href="#">$50K - $100k</a>
+                    <a href="#">$100K - $200K</a>
+                    <a href="#">$200K - $300K</a>
+                    <a href="#">$300K - $400K</a>
+                    <a href="#">+ $400K</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Mes
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Enero</a>
+                    <a href="#">Febrero</a>
+                    <a href="#">Marzo</a>
+                    <a href="#">Abril</a>
+                    <a href="#">Mayo</a>
+                    <a href="#">Junio</a>
+                    <a href="#">Julio</a>
+                    <a href="#">Agosto</a>
+                    <a href="#">Septiembre</a>
+                    <a href="#">Octubre</a>
+                    <a href="#">Noviembre</a>
+                    <a href="#">Diciembre</a>
+                </div>
+            </div>
+            <div class="user-container">
+                <div class="circle">
+                <!-- <img src="assets/img/scrum.jpg">  -->
+                </div>
+                <p>Adrián Pérez</p>
+            </div>
+        </div>
+        <div class="element-container">
+            <div class="deparment">
+                <p>Marketing</p>
+                <div class="depto-container">
+                    <!-- INCLUIR CONTENIDO DEPARTAMENTO -->
+                    <div class="deparment-budget">
+                        <div class="budget-teams">
+                            <p>Presupuesto Equipos</p>
+                            <div class="bar-chart-one">
+                                <div class="chart-container">
+                                    <div class="budget">
+                                        <span>100k</span>
+                                        <span>75k</span>
+                                        <span>50k</span>
+                                        <span>25k</span>
+                                        <span>0</span>
+                                    </div>
+                    <div class="deparment">
+                        <span>Mktg</span>
+                        <span>Ventas</span>
+                        <span>Legal</span>
+                        <span>RRHH</span>
+                        <span>Logist</span>
+                        <span>Compras</span>
+                    </div>
+                    <div class="bars">
+                        <div class="container-bar">
+                            <span class="bar"></span>
+                        </div>
+                        <div class="container-bar">
+                            <span class="bar"></span>
+                        </div>
+                        <div class="container-bar">
+                            <span class="bar"></span>
+                        </div>
+                        <div class="container-bar">
+                            <span class="bar"></span>
+                        </div>
+                        <div class="container-bar">
+                            <span class="bar"></span>
+                        </div>
+                        <div class="container-bar">
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="benefit">
+                <p>Ingresos</p>
+                <div class="benefit-container">
+                    <!-- INCLUIR CONTENIDO INGRESOS -->
+                </div>
+                <span>Egresos</span>
+                <div class="expenses-container">
+                    <div class="skill">
+                        <div class="outer">
+                          <div class="inner">
+                            <div id="number"></div>
+                          </div>
+                        </div>
+                  
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          width="160px"
+                          height="160px"
+                        >
+                          <defs>
+                            <linearGradient id="GradientColor">
+                              <stop offset="0%" stop-color="#e91e63" />
+                              <stop offset="100%" stop-color="#673ab7" />
+                            </linearGradient>
+                          </defs>
+                          <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                        </svg>
+                      </div>
+                    <!-- INCLUIR CONTENIDO EGRESOS -->
+                </div>
+            </div>
+        </div>
+       
+<!-- script -->
+          <script>
+            let number = document.getElementById("number");
+            let counter = 0;
+            setInterval(() => {
+              if (counter == 65) {
+                clearInterval();
+              } else {
+                counter += 1;
+                number.innerHTML = counter + "%";
+              }
+            }, 30);
+          </script>
+</body>
+</html>
