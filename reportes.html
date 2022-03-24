@@ -70,21 +70,87 @@
             </div>
             <div class="user-container">
                 <div class="circle">
-                <!-- <img src="assets/img/scrum.jpg">  -->
+                <img src="assets/img/profile.png"> 
                 </div>
-                <p>Adrián Pérez</p>
+                <a href="profile.html"><p>Adrián Pérez</p></a>
             </div>
         </div>
         <div class="element-container">
             <div class="preferences-container">
                 <div class="resum">
-                    <p>Fecha</p>
+                    <p>Fecha Reporte</p>
                     <div class="resum-container">
                         <div class="line-chart">
-                            <!-- INCLUIR GRAFICA DE LINEAS -->
+                            <table id="line-example-6" class="charts-css line multiple hide-data show-labels show-primary-axis show-data-axes">
+                                <caption> Line Example #6 </caption>
+                                <thead>
+                                  <tr>
+                                    <th scope="col"> Month </th>
+                                    <th scope="col"> Progress 1 </th>
+                                    <th scope="col"> Progress 2 </th>
+                                    <th scope="col"> Progress 3 </th>
+                                    <th scope="col"> Progress 4 </th>
+                                    <th scope="col"> Progress 5 </th>
+                                    <th scope="col"> Progress 6 </th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row"> Ene </th>
+                                    <td style="--start:0.1; --size:0.5;"><span class="data"> 50 </span></td>
+                                    <td style="--start:0; --size:0.2;"><span class="data"> 20 </span></td>
+                                    <td style="--start:0.2; --size:0.4;"><span class="data"> 40 </span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"> Feb </th>
+                                    <td style="--start:0.5; --size:0.8;"><span class="data"> 80 </span></td>
+                                    <td style="--start:0.2; --size:0.5;"><span class="data"> 50 </span></td>
+                                    <td style="--start:0.4; --size:0.1;"><span class="data"> 10 </span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"> Mar </th>
+                                    <td style="--start:0.8; --size:0.4;"><span class="data"> 40 </span></td>
+                                    <td style="--start:0.5; --size:0.3;"><span class="data"> 30 </span></td>
+                                    <td style="--start:0.1; --size:0.2;"><span class="data"> 20 </span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"> Abr </th>
+                                    <td style="--start:0.4; --size:0.2;"><span class="data"> 40 </span></td>
+                                    <td style="--start:0.3; --size:0.1;"><span class="data"> 30 </span></td>
+                                    <td style="--start:0.2; --size:0.1;"><span class="data"> 20 </span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"> May </th>
+                                    <td style="--start:0.2; --size:0.6;"><span class="data"> 40 </span></td>
+                                    <td style="--start:0.1; --size:0.5;"><span class="data"> 30 </span></td>
+                                    <td style="--start:0.1; --size:0.3;"><span class="data"> 20 </span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"> Jun </th>
+                                    <td style="--start:0.6; --size:0.3;"><span class="data"> 40 </span></td>
+                                    <td style="--start:0.5; --size:0.2;"><span class="data"> 30 </span></td>
+                                    <td style="--start:0.3; --size:0.5;"><span class="data"> 20 </span></td>
+                                  </tr>
+                                </tbody>
+                              </table>
                         </div>
                         <div class="resum-list">
-                            <!-- INCLUIR LISTA DEPTOS SCROLL-Y -->
+                            <div class="item-list">
+                                <h3>Equipos</h3>
+                                <p>$50K</p>
+                            </div>
+                            <div class="item-list">
+                                <h3>Finanzas y Fiscal</h3>
+                                <p>$50K</p>
+                            </div>
+                            <div class="item-list">
+                                <h3>Control Personal</h3>
+                                <p>$50K</p>
+                            </div>
+                            <div class="item-list">
+                                <h3>Facturación</h3>
+                                <p>$50K</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -92,29 +158,27 @@
                     <p>Reporte Personalizado</p>
                     <div class="console-container">
                         <div class="console">
-                            <div class="report-type">
-                                <p>Tipo Reporte</p>
-                                <ul>
-                                    <!-- <input type="checkbox" id="checkbox" placeholder="Facturación"/> -->
-                                    <li>Facturación</li>
-                                    <li>Control Personal</li>
-                                    <li>Financiero</li>
-                                </ul>
-                            </div>
-                            <div class="graph-type">
-                                <p>Tipo de Gráfica</p>
-                                <ul>
-                                    <li>Circular</li>
-                                    <li>Barras</li>
-                                    <li>Histograma</li>
-                                </ul>
-                            </div>
                             <div class="calendar">
-                                <input type="date" id="date" name="name"/>
+                                <input type="date"/>
+                            </div>
+                            <div class="check-list">
+                                <div class="report-type">
+                                    <p>Tipo Reporte</p>
+                                    <label><input type="checkbox">Facturación</label>
+                                    <label><input type="checkbox">Control Personal</label>
+                                    <label><input type="checkbox">Financiero</label>
+                                </div>
+                                <div class="graph-type">
+                                    <p>Tipo de Gráfica</p>
+                                    <label><input type="checkbox">Circular</label>
+                                    <label><input type="checkbox">Barras</label>
+                                    <label><input type="checkbox">Histograma</label>
+                                </div>
                             </div>
                         </div>
                         <div class="buttons">
-                            <!-- INCLUIR BOTONES -->
+                            <button class="btn-one">Generar Reporte</button>
+                            <button class="btn-two">Descargar</button>
                         </div>
                     </div>
                 </div>
@@ -122,7 +186,55 @@
             <div class="list">
                 <p>Historial</p>
                 <div class="list-container">
-
+                    <div class="record-item">
+                        <h3>General</h3>
+                        <p>16 Jun 2022</p>
+                    </div>
+                    <div class="record-item">
+                        <h3>Equipos</h3>
+                        <p>13 Jun 2022</p>
+                    </div>
+                    <div class="record-item">
+                        <h3>Fianzas</h3>
+                        <p>10 Jun 2022</p>
+                    </div>
+                    <div class="record-item">
+                        <h3>Personal</h3>
+                        <p>07 Jun 2022</p>
+                    </div>
+                    <div class="record-item">
+                        <h3>Facturación</h3>
+                        <p>04 Jun 2022</p>
+                    </div>
+                    <div class="record-item">
+                        <h3>Personalizado</h3>
+                        <p>01 Jun 2022</p>
+                    </div>
+                    <div class="record-item">
+                        <h3>General</h3>
+                        <p>29 May 2022</p>
+                    </div>
+                    <div class="record-item">
+                        <h3>Equipos</h3>
+                        <p>26 May 2022</p>
+                    </div>
+                    <div class="record-item">
+                        <h3>Fianzas</h3>
+                        <p>23 May 2022</p>
+                    </div>
+                    <div class="record-item">
+                        <h3>Personal</h3>
+                        <p>20 May 2022</p>
+                    </div>
+                    <div class="record-item">
+                        <h3>Facturación</h3>
+                        <p>17 May 2022</p>
+                    </div>
+                    <div class="record-item">
+                        <h3>Personalizado</h3>
+                        <p>14 May 2022</p>
+                    </div>
+                    
                 </div>
             </div>
         </div>

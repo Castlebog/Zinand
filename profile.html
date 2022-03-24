@@ -25,83 +25,150 @@
             <a class="button" href="facturacion.html"> <i class="fi fi-br-list-check"></i>Facturación</a>
             <a class="button" href="reportes.html"> <i class="fi fi-sr-document"></i>Reportes</a>
         </nav>
-        <div class="user">
-            <!-- <div class="dropdown">
-                <button class="dropbtn">Departamento
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Marketing</a>
-                    <a href="#">Ventas</a>
-                    <a href="#">Legal</a>
-                    <a href="#">RRHH</a>
-                    <a href="#">Logística</a>
-                    <a href="#">Compras</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Presupuesto
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">$0 - $50K</a>
-                    <a href="#">$50K - $100k</a>
-                    <a href="#">$100K - $200K</a>
-                    <a href="#">$200K - $300K</a>
-                    <a href="#">$300K - $400K</a>
-                    <a href="#">+ $400K</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Mes
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Enero</a>
-                    <a href="#">Febrero</a>
-                    <a href="#">Marzo</a>
-                    <a href="#">Abril</a>
-                    <a href="#">Mayo</a>
-                    <a href="#">Junio</a>
-                    <a href="#">Julio</a>
-                    <a href="#">Agosto</a>
-                    <a href="#">Septiembre</a>
-                    <a href="#">Octubre</a>
-                    <a href="#">Noviembre</a>
-                    <a href="#">Diciembre</a>
-                </div>
-            </div> -->
-            <div class="user-container">
-                <div class="circle">
-                <!-- <img src="assets/img/scrum.jpg">  -->
-                </div>
-                <p>Adrián Pérez</p>
-            </div>
-        </div>
+        
         <div class="element-container">
             <div class="profile-container">
                 <div class="profile">
-                    <!-- INCLUIR CONTENIDO PERFIL -->
+                    <div class="circle">
+                        <img src="assets/img/profile.png">
+                        </div>
+                        <div class="content">
+                            <h3>Adrián Pérez</h3>
+                            <h4>CEO</h4>
+                            <p>aperez@empresa.com</p>
+                        </div>
+                        
                 </div>
                 <div class="settings">
                     <p>Ajustes</p>
                     <div class="settings-container">
-                        <!-- INCLUIR CONTENIDO AJUSTES -->
+                        <div class="dropdown">
+                            <button class="dropbtn">Idioma
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Aleman</a>
+                                <a href="#">Español</a>
+                                <a href="#">Frances</a>
+                                <a href="#">Inglés</a>
+                                <a href="#">Italiano</a>
+                                <a href="#">Portugués</a>
+                            </div>
+                        </div>
+                        <div class="notification">
+                            <p>Notificaciones</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="alert">
+                            <p>Alertas</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="logout">
+                            <button class="btn">Cerrar Sesión</button>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="management-container">
                 <div class="management">
                     <p>Gerencia</p>
-                    <div class="budget">
-                        <!-- INCLUIR CONTENIDO GERENCIA -->
+                    <div class="box">
+                       <div class="general-budget">
+                           <div class="budget">
+                               <p>Presupuesto General</p>
+                           </div>
+                           <input type="text" placeholder="$800.000.00"/>
+                       </div>
+                       <div class="depto-budget">
+                        <div class="dr0pdown">
+                            <button class="dr0pbtn">Presupuesto Dpto
+                            </button>
+                            <div class="dr0pdown-content">
+                                <a href="#">Marketing</a>
+                                <a href="#">Ventas</a>
+                                <a href="#">Legal</a>
+                                <a href="#">RRHH</a>
+                                <a href="#">Logística</a>
+                                <a href="#">Compras</a>
+                            </div>
+                        </div>
+                        <input type="text" placeholder="$78.500.00"/>
+                       </div> 
                     </div>
                     <p>Ingresos / Egresos</p>
                 </div>
                 <div class="benefit-expenses">
-                    <div class="resum">
-                        <!-- INCLUIR CONTENIDO INGRESOS SCROLL-Y -->
+                    <div class="box-resum">
+                        <div class="date">
+                            <h5>Fecha</h5>
+                            <p>01/06/22</p>
+                            <p>05/06/22</p>
+                            <p>07/06/22</p>
+                            <p>09/06/22</p>
+                            <p>15/06/22</p>
+                            <p>23/06/22</p>
+                            <p>28/06/22</p>
+                        </div>
+                        <div class="client">
+                            <h5>cliente</h5>
+                            <p>-</p>
+                            <p>NU Bank</p>
+                            <p>Rappi</p>
+                            <p>-</p>
+                            <p>Bitso</p>
+                            <p>-</p>
+                            <p>Vtex</p>
+                        </div>
+                        <div class="supplier">
+                            <h5>Proveedor</h5>
+                            <p>Proveedor 1</p>
+                            <p>-</p>
+                            <p>-</p>
+                            <p>Proveedor 2</p>
+                            <p>-</p>
+                            <p>Proveedor 3</p>
+                            <p>-</p>
+                        </div>
+                        <div class="bill">
+                            <h5>No. Factura</h5>
+                            <p>Fac-097-420</p>
+                            <p>Fac-097-421</p>
+                            <p>Fac-097-422</p>
+                            <p>Fac-097-423</p>
+                            <p>Fac-097-424</p>
+                            <p>Fac-097-425</p>
+                            <p>Fac-097-426</p>
+                        </div>
+                        <div class="benefit">
+                            <h5>Ingresos</h5>
+                            <p>-</p>
+                            <p>$5.873.00</p>
+                            <p>$6.986.00</p>
+                            <p>-</p>
+                            <p>$8.265.00</p>
+                            <p>-</p>
+                            <p>$3.987.00</p>
+                        </div>
+                        <div class="expenses">
+                            <h5>Egresos</h5>
+                            <p>$1.576.00</p>
+                            <p>-</p>
+                            <p>-</p>
+                            <p>$3.985.00</p>
+                            <p>-</p>
+                            <p>$1.987.00</p>
+                            <p>-</p>
+                        </div>
                     </div>
                 </div>
                 <div class="button-container">
-                    <!-- INCLUIR BOTONES -->
+                    <button class="btn-one">Editar</button>
+                    <button class="btn-two">Actualizar</button>
                 </div>
             </div>
         </div>
