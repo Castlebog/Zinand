@@ -62,8 +62,10 @@ body{
     inset -5px -5px 18px #FFFFFF;
     color: #192a539d;
 }
-.navbar i{
-    padding-left: 40px;
+.button .fa-solid{
+    font-size: 20px;
+    color: #192A53;
+    padding: 0 10px 0 20px;
 }
 
 /* DROPDOWN */
@@ -101,8 +103,8 @@ body{
     box-shadow: 4px 4px 16px rgba(138, 155, 189, 0.48), 
     -5px -5px 18px #FFFFFF;
     z-index: 1;
-    border-radius: 10px;
-    top: 85px;
+    border-radius: 0 0 10px 10px;
+    top: 74px;
 }
 .dropdown-content a{
     float: none;
@@ -114,6 +116,11 @@ body{
 }
 .dropdown-content a:hover{
     color: #192A53;
+}
+.dropbtn .fa-solid{
+    font-size: 15px;
+    color: #34acfcab;
+    padding-left: 20px;
 }
 .dropdown:hover .dropdown-content{
     display: block;
@@ -281,6 +288,18 @@ body{
     font-weight: normal;
     margin: 15px;
 }
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-track{
+    background: #EEF3F8;
+    box-shadow: inset -4px -4px 9px rgba(255, 255, 255, 0.88), inset 4px 4px 14px #C1D5EE;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: #BCCCDF;
+    border-radius: 10px;
+}
 
 /* REPORTE PERSONALIZADO */
 
@@ -359,13 +378,29 @@ body{
     display: flex;
     flex-direction: column;
 }
-.check-list label{
-    margin: 5px 0 0 20px;
-    font-size: 14px;
-    color: #192A53;
+[type="checkbox"]{display: none;}
+
+label{
+    padding-left: 20px;
+    position: relative;
 }
-.check-list label input{
-    margin-right: 10px;   
+
+label::before{
+    content: '';
+    border: solid 1px #ffffffaf;
+    background: #E3EDF7;
+    box-shadow: inset -4px -4px 9px rgba(255, 255, 255, 0.6), inset 4px 4px 14px #C5D7EE;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
+[type="checkbox"]:checked + label::before{
+    background: #34ADFC;
+    box-shadow: none;
 }
 .buttons{
     width: 130px;

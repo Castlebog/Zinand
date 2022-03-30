@@ -62,8 +62,10 @@ body{
     inset -5px -5px 18px #FFFFFF;
     color: #192a539d;
 }
-.navbar i{
-    padding-left: 40px;
+.button .fa-solid{
+    font-size: 20px;
+    color: #192A53;
+    padding: 0 10px 0 20px;
 }
 
 /* BOXES */
@@ -212,6 +214,11 @@ body{
 }
 .dropdown-content a:hover{
     color: #192A53;
+}
+.dropbtn .fa-solid{
+    font-size: 15px;
+    color: #34acfcab;
+    padding-left: 20px;
 }
 .dropdown:hover .dropdown-content{
     display: block;
@@ -449,6 +456,11 @@ input:checked + .slider:before {
 }
 .dr0pdown-content a:hover{
     color: #192A53;
+}
+.dr0pbtn .fa-solid{
+    font-size: 15px;
+    color: #34acfcab;
+    padding-left: 20px;
 }
 .dr0pdown:hover .dr0pdown-content{
     display: block;

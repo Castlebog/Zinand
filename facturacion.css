@@ -62,8 +62,10 @@ body{
     inset -5px -5px 18px #FFFFFF;
     color: #192a539d;
 }
-.navbar i{
-    padding-left: 40px;
+.button .fa-solid{
+    font-size: 20px;
+    color: #192A53;
+    padding: 0 10px 0 20px;
 }
 
 /* DROPDOWN */
@@ -101,8 +103,8 @@ body{
     box-shadow: 4px 4px 16px rgba(138, 155, 189, 0.48), 
     -5px -5px 18px #FFFFFF;
     z-index: 1;
-    border-radius: 10px;
-    top: 85px;
+    border-radius: 0 0 10px 10px;
+    top: 74px;
 }
 .dropdown-content a{
     float: none;
@@ -114,6 +116,11 @@ body{
 }
 .dropdown-content a:hover{
     color: #192A53;
+}
+.dropbtn .fa-solid{
+    font-size: 15px;
+    color: #34acfcab;
+    padding-left: 20px;
 }
 .dropdown:hover .dropdown-content{
     display: block;
@@ -155,13 +162,19 @@ body{
     align-items: center;
 }
 .circle img{
-    width: 45px;
-    height: 45px;
-    border-radius: 25%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.user-container a{
+    text-decoration: none;
 }
 .user-container p{
     color: #1A2B52;
     font-size: 15px;
+}
+.user-container p:hover{
+    color: #34ADFC
 }
 
 /* BOXES */
