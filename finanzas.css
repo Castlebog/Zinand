@@ -192,9 +192,11 @@ body {
   height: 570px;
   top: 120px;
   left: 270px;
-  display: grid;
-  grid-template-columns: auto auto;
+  /* display: grid;
+  grid-template-columns: auto auto; */
+  flex-direction: row;
   gap: 10px;
+  display: flex;
 }
 .deparment {
   width: 395px;
@@ -238,8 +240,10 @@ body {
     #e9f0f7;
   box-shadow: 4px 4px 16px rgba(138, 155, 189, 0.48), -5px -5px 18px #ffffff;
   border-radius: 10px;
-  display: grid;
-  grid-template-rows: auto auto;
+  display: flex;
+  flex-direction: column;
+  /* display: grid;
+  grid-template-rows: auto auto; */
   justify-items: center;
 }
 .benefit p {
