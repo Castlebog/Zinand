@@ -388,7 +388,7 @@ body {
 circle {
   fill: none;
   stroke: url(#GradientColor);
-  /* stroke: linear-gradient(#192a53, #34adfc); */
+  /* stroke: linear-gradient(#192a53, #34adfc) !important; */
   stroke-width: 20px;
   stroke-dasharray: 472;
   stroke-dashoffset: 472;
