@@ -245,12 +245,81 @@ body {
   align-items: center;
   justify-items: center;
 }
+.chart-container {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 15px;
+  margin: 10px;
+}
+
+.budget {
+  position: absolute;
+  color: #8b9eb0;
+  width: 50px;
+  height: 200px;
+  display: flex;
+  padding-bottom: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.budget span {
+  font-size: 11px;
+  height: 12px;
+  line-height: 12px;
+  text-align: right;
+  padding-right: 4px;
+  font-weight: 600;
+}
+.deparment {
+  position: absolute;
+  color: #8b9eb0;
+  display: flex;
+  gap: 3.5px;
+  left: 100px;
+}
+.deparment span {
+  font-size: 11px;
+  padding-right: 25px;
+}
+.bars {
+  position: relative;
+  left: 77px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+.container-bar {
+  position: relative;
+  width: 27px;
+  height: 190px;
+  background: #e3edf7;
+  box-shadow: inset -5.36099px -5.36099px 12.0622px rgba(255, 255, 255, 0.88),
+    inset 5.36099px 5.36099px 18.7635px #c1d5ee;
+  border-radius: 15px;
+  margin: 15px 0 17px;
+}
+.bar::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  background: linear-gradient(#192a53, #34adfc);
+  width: 25px;
+  border-radius: 15px;
+}
+.bar:nth-child(1)::after {
+  height: calc((162px / 100) * 77);
+}
 .calendar-container {
   width: 290px;
   height: 230px;
   background: #eef3f8;
   border-radius: 9px;
 }
+/* botton */
+.button {
+  color: -internal-light-dark(#192a53, #34adfc);
+}
+
 /* INCLUIR CALENDARIO */
 
 .calendar-alert {
@@ -339,7 +408,7 @@ body {
 .days li .active {
   padding: 5px;
   background: #34adfc;
-  border-radius: 10px;
+  border-radius: 20px;
   color: white !important;
 }
 
