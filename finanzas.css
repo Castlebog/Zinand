@@ -278,7 +278,7 @@ body {
 .alert-box {
   width: 100px;
   height: 165px;
-  margin: 10px;
+  margin-left: 30px;
   background: linear-gradient(
       312.9deg,
       rgba(255, 255, 255, 0.3) 4.49%,
@@ -355,6 +355,7 @@ body {
   height: 160px;
   position: relative;
   display: flex;
+  padding: 35px;
 }
 .outer {
   height: 160px;
@@ -392,8 +393,8 @@ circle {
 
 svg {
   position: absolute;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
 }
 @keyframes anim {
   100% {
