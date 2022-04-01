@@ -81,21 +81,178 @@
         </div>
         <div class="element-container">
             <div class="deparment">
-                <p>Departamento</p>
+                <p>Marketing</p>
                 <div class="depto-container">
+                    
+                    <!-- INCLUIR CONTENIDO DEPARTAMENTO BARRAS-->
+                    <!-- <div class="chart-container">
+                        <div class="budget">
+                            <span>150K</span>
+                            <span>100K</span>
+                            <span>50K</span>
+                            <span>25K</span>
+                            <span>10K</span>
+                            <span>5K</span>
+                        </div> -->
+                        <div class="meses">
+                            <span>Ene</span>
+                            <span>Feb</span>
+                            <span>Mar</span>
+                            <span>Abr</span>
+                            <span>May</span>
+                            <span>Jun</span>
+                            <span>Jul</span>
+                            <span>Ago</span>
+                            <span>Sep</span>
+                            <span>Oct</span>
+                            <span>Nov</span>
+                            <span>Dic</span>
+                        </div>
+                        <div class="bars">
+                            <div class="container-bar">
+                                <span class="bar"></span>
+                            </div>
+                            <div class="container-bar">
+                                <span class="bar"></span>
+                            </div>
+                            <div class="container-bar">
+                                <span class="bar"></span>
+                            </div>
+                            <div class="container-bar">
+                                <span class="bar"></span>
+                            </div>
+                            <div class="container-bar">
+                                <span class="bar"></span>
+                            </div>
+                            <div class="container-bar">
+                                <span class="bar"></span>
+                            </div>
+                            <div class="container-bar">
+                                <span class="bar"></span>
+                            </div>
+                            <div class="container-bar">
+                                <span class="bar"></span>
+                            </div>
+                            <div class="container-bar">
+                                <span class="bar"></span>
+                            </div>
+                            <div class="container-bar">
+                                <span class="bar"></span>
+                            </div>
+                            <div class="container-bar">
+                                <span class="bar"></span>
+                            </div>
+                            <div class="container-bar">
+                                <span class="bar"></span>
+                            </div>
+                        </div> 
+
                     <!-- INCLUIR CONTENIDO DEPARTAMENTO -->
                 </div>
             </div>
             <div class="benefit">
                 <p>Ingresos</p>
-                <div class="benefit-container">
+                
                     <!-- INCLUIR CONTENIDO INGRESOS -->
+                    <div class="benefit-container">
+                        <div class="expenses-container">
+                            <div class="skill">
+                                <div class="outer">
+                                  <div class="inner">
+                                    <div id="number"></div>
+                                  </div>
+                                </div>
+                              <!-- alerta -->
+                              
+                              <div class="alert-box">
+                                <h3>Vence</h3>
+                                <p>Fac-097-420</p>
+                                <h4>23</h4>
+                                <p>Jueves</p>
+                                <div class="alert-button">
+                                    <i class="fa-solid fa-bell" style="color:#34ADFC"></i>
+                                </div>
+                            </div>
+    
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  version="1.1"
+                                  width="160px"
+                                  height="160px"
+                                >
+                                  <defs>
+                                    <linearGradient id="GradientColor">
+                                      <stop offset="0%" stop-color="#34ADFC" />
+                                      <stop offset="100%" stop-color="#192A53" />
+                                    </linearGradient>
+                                  </defs>
+                                  <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                         </div>
                 </div>
-                <span>Egresos</span>
-                <div class="expenses-container">
+
+
+
+        
                     <!-- INCLUIR CONTENIDO EGRESOS -->
+                    <span>Egresos</span>
+                    <div class="benefit-container">
+                        <div class="expenses-container">
+                            <div class="skill">
+                                <div class="outer">
+                                  <div class="inner">
+                                    <div id="number"></div>
+                                  </div>
+                                </div>
+                              <!-- alerta -->
+                              
+                              <div class="alert-box">
+                                <h3>Vence</h3>
+                                <p>Fac-097-420</p>
+                                <h4>23</h4>
+                                <p>Jueves</p>
+                                <div class="alert-button">
+                                    <i class="fa-solid fa-bell" style="color:#34ADFC"></i>
+                                </div>
+                            </div>
+    
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  version="1.1"
+                                  width="160px"
+                                  height="160px"
+                                >
+                                  <defs>
+                                    <linearGradient id="GradientColor">
+                                      <stop offset="0%" stop-color="#e91e63" />
+                                      <stop offset="100%" stop-color="#673ab7" />
+                                    </linearGradient>
+                                  </defs>
+                                  <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                         </div>
                 </div>
+
             </div>
         </div>
+       
+<!-- script -->
+          <script>
+            let number = document.getElementById("number");
+            let counter = 0;
+            setInterval(() => {
+              if (counter == 65) {
+                clearInterval();
+              } else {
+                counter += 1;
+                number.innerHTML = counter + "%";
+              }
+            }, 30);
+          </script>
+
+<script src="https://kit.fontawesome.com/88121c0ea5.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
