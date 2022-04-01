@@ -241,6 +241,21 @@ body {
 }
 /* INCLUIR GRAFICA DE BARRAS Y BOTONES */
 
+/* CAMPANAS */
+
+.fa-solid {
+  font-size: 20px;
+  color: #34adfc;
+}
+.alert-button:hover {
+  background: #eef3f8;
+  box-shadow: inset -2px -2px 9px rgba(255, 255, 255, 0.88),
+    inset 2px 2px 10px #c1d5ee;
+}
+.fa-solid:hover {
+  color: #192a5388;
+}
+
 .date-alert {
   width: 800px;
   height: 250px;
@@ -330,7 +345,7 @@ body {
 }
 /* botton */
 .bottones {
-  left: 78%;
+  left: 72%;
   position: sticky;
   display: grid;
   margin: 10px 10px 70px 10px;
@@ -391,7 +406,7 @@ body {
   overflow-x: scroll;
 }
 
-/* calndario */
+/* calendario */
 * {
   box-sizing: border-box;
 }
