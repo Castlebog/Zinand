@@ -29,6 +29,19 @@
     z-index: 1;
     box-shadow: 1px 1px 7px 2px rgba(0, 0, 0, 0.2);
 }
+.navbar-brand{
+    margin-left: 30px!important;
+}
+.navbar-toggler .fa-solid{
+    font-size: 25px;
+    color: #3DAFF9;
+    padding: 5px;
+}
+.navbar-toggler{
+    color: rgba(0, 0, 0, 0)!important;
+    border-color: rgba(0, 0, 0, 0)!important;
+}
+
 /* BANNER HERO */
 
 .banner-hero{
@@ -114,6 +127,11 @@
     border-radius: 10px!important;
     border: none!important;
 }
+.fa-solid{
+    font-size: 40px;
+    color: #3DAFF9;
+    padding: 10px;
+}
 .card h3{
     padding: 10px;
     font-size: 20px;
@@ -146,7 +164,7 @@
     padding: 10px;
     margin: 10px;
     height: 200px;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 .reviews h3{
     text-align: justify;
@@ -159,6 +177,20 @@
     text-align: justify;
     color: #192A53;
 }
+::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+}
+::-webkit-scrollbar-track{
+    background: #EEF3F8;
+    box-shadow: inset -4px -4px 9px rgba(255, 255, 255, 0.88), inset 4px 4px 14px #C1D5EE;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: #BCCCDF;
+    border-radius: 10px;
+}
+
 /* EMPRESAS */
 
 .section-container{
@@ -621,9 +653,10 @@
     display: flex;
     flex-direction: row;
 }
-.social-media img{
-    width: 25px;
-    margin-right: 20px;
+.social-media .fa-brands{
+    font-size: 25px;
+    color: #FFFFFF;
+    padding: 10px;
 }
 .data{
     margin-top: 20px;
@@ -793,7 +826,7 @@ input::placeholder{
     margin: 10px;
     padding: 10px;
     height: 200px;
-    overflow: scroll;
+    overflow-y: scroll;
     }
 .section-container{
     height: 360px;

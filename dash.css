@@ -62,8 +62,13 @@ body{
     inset -5px -5px 18px #FFFFFF;
     color: #192a539d;
 }
-.navbar i{
-    padding-left: 40px;
+.button .fa-solid{
+    font-size: 20px;
+    color: #192A53;
+    padding: 0 10px 0 20px;
+}
+.button .fa-solid:hover{
+    color: #192a5385;
 }
 
 /* DROPDOWN */
@@ -155,13 +160,19 @@ body{
     align-items: center;
 }
 .circle img{
-    width: 45px;
-    height: 45px;
-    border-radius: 25%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.user-container a{
+    text-decoration: none;
 }
 .user-container p{
     color: #1A2B52;
     font-size: 15px;
+}
+.user-container p:hover{
+    color: #34ADFC
 }
 
 /* BOXES */
@@ -257,6 +268,18 @@ body{
     font-size: 14px;
     color: #1A2B52;
     margin: 0;
+}
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-track{
+    background: #EEF3F8;
+    box-shadow: inset -4px -4px 9px rgba(255, 255, 255, 0.88), inset 4px 4px 14px #C1D5EE;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: #BCCCDF;
+    border-radius: 10px;
 }
 
 /* SEGUNDA CAJA */
@@ -380,5 +403,15 @@ body{
     box-shadow: inset -4px -4px 9px rgba(255, 255, 255, 0.88), inset 4px 4px 14px #C1D5EE;
     border-radius: 9px;
 }
-/* FALTA LA GRAFICA DE BARRAS */
+.month{
+    position: absolute;
+    color: #8B9EB0;
+    display: flex;
+    left: 475px;
+}
+.month span{
+    font-size: 11px;
+    padding-right: 37px;
+}
+
 
