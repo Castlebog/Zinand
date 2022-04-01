@@ -240,6 +240,14 @@ body {
   margin-bottom: 10px;
 }
 /* INCLUIR GRAFICA DE BARRAS Y BOTONES */
+/* scroll */
+.calendar-alert::-webkit-scrollbar {
+  height: 2px;
+}
+.calendar-alert::-webkit-scrollbar-thumb {
+  background: #8b9eb0;
+  border-radius: 5px;
+}
 
 /* CAMPANAS */
 
