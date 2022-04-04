@@ -206,17 +206,11 @@ body{
     color: #192A53;
     margin: 15px;
 }
-.bar-chart{
-    width: 470px;
-    height: 250px;
-    border-radius: 9px;
-    background: #697591;
-    margin-bottom: 10px;
-}
-/* INCLUIR GRAFICA DE BARRAS */
+
+/* GRAFICA */
 
 .bar-chart{
-    width: 440px;
+    width: 470px;
     height: 198px;
     background: #EEF3F8;
     box-shadow: inset -4px -4px 9px rgba(255, 255, 255, 0.88), inset 4px 4px 14px #C1D5EE;
@@ -249,7 +243,7 @@ body{
     position: absolute;
     color: #8B9EB0;
     display: flex;
-    left: 110px;
+    left: 95px;
     gap: 12px;
   }
   .mes span{
@@ -284,44 +278,120 @@ body{
     height: calc((162px / 100) * 77);
   }
 
-/* INCLUIR CONTENIDO CONTRATOS */
+  /* CONTRATOS */
 
 .contract-container{
     width: 470px;
-    height: 230px;
+    min-height: 230px;
     background: #EEF3F8;
     box-shadow: inset -4px -4px 9px rgba(255, 255, 255, 0.88), inset 4px 4px 14px #C1D5EE;
     border-radius: 9px;
     margin-bottom: 10px;
     overflow-y: scroll;
 }
-
 .box-container{
-    width: 450px;
-    height: 300px;
-    margin-left: 10px;
-    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .box{
     width: 440px;
-    height: 55px; 
+    height: 55px;
     margin-top: 10px;
     background: linear-gradient(312.9deg, rgba(255, 255, 255, 0.3) 4.49%, rgba(233, 240, 247, 0.3) 95.45%), #E9F0F7;
-    box-shadow: 4.89044px 4.89044px 19.5618px rgba(138, 155, 189, 0.48), -6.11305px -6.11305px 22.007px #FFFFFF;
+    box-shadow: 4.89044px 4.89044px 19.5618px rgb(138 155 189 / 48%), -6.11305px -6.11305px 22.007px #ffffff;
     border-radius: 15px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 70px;
-    justify-items: left;
-    padding-left: 15px;
+    grid-template-columns: repeat(6, auto);
+    gap: 2px;
     align-items: center;
-    color: #1A2B52;
+    justify-items: center;
+    justify-content: space-between;
 }
-.box p{
-    font-size: 14px;
-    color: #1A2B52;
+.box .circle{
+    margin-left: 10px;
+}
+.name{
+    width: 80px;
+}
+.name p{
+    font-size: 15px;
+    font-weight: normal;
+    color: #192A53;
     margin: 0;
 }
+.salary p{
+    font-size: 15px;
+    font-weight: normal;
+    color: #192a5393;
+    margin: 0;
+}
+.expire .fa-solid{
+    font-size: 15px;
+    color: #192A53;
+}
+.expire0 .fa-solid{
+    font-size: 15px;
+    color: #34ADFC;
+}
+.alert p{
+    font-size: 15px;
+    font-weight: normal;
+    color: #192a5393;
+    margin: 0;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    height: 55px;
+}
+.btn-one{
+    width: 50px;
+    height: 55px;
+    padding: 0;
+    border: none;
+    background: #EBF2F8;
+    box-shadow: inset -3.89775px -3.89775px 8.76995px rgba(255, 255, 255, 0.6), inset 3.89775px 3.89775px 13.6421px #C5D7EE;
+    border-radius: 10px 0px 0px 10px;
+    color: #34ADFC;
+}
+.btn-one:hover{
+    background: #34ADFC;
+    color: #FFFFFF;
+    box-shadow: none
+}
+.btn-two{
+    width: 50px;
+    height: 55px;
+    padding: 0;
+    border: none;
+    background: #EBF2F8;
+    background: #EBF2F8;
+    box-shadow: inset -3.89775px -3.89775px 8.76995px rgba(255, 255, 255, 0.6), inset 3.89775px 3.89775px 13.6421px #C5D7EE;
+    border-radius: 0px 10px 10px 0px;
+    color: #192A53;
+}
+.btn-two:hover{
+    background: #192A53;
+    color: #FFFFFF;
+    box-shadow: none
+}
+::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+}
+::-webkit-scrollbar-track{
+    background: #EEF3F8;
+    box-shadow: inset -4px -4px 9px rgba(255, 255, 255, 0.88), inset 4px 4px 14px #C1D5EE;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: #BCCCDF;
+    border-radius: 10px;
+}
+
+/* DEPTOS LIST */
 
 .list{
     width: 290px;
@@ -347,32 +417,51 @@ body{
     border-radius: 9px;
     margin-bottom: 10px;
     overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-/* INCLUIR LISTA DEPTOS */
-
-.depa-container{
+.depto-box{
     width: 250px;
-    height: 700px;
-    margin-left: 10px;
-    overflow-y: scroll;
-}
-.depa{
-    width: 240px;
-    height: 55px; 
+    min-height: 55px;
     margin-top: 10px;
     background: linear-gradient(312.9deg, rgba(255, 255, 255, 0.3) 4.49%, rgba(233, 240, 247, 0.3) 95.45%), #E9F0F7;
-    box-shadow: 4.89044px 4.89044px 19.5618px rgba(138, 155, 189, 0.48), -6.11305px -6.11305px 22.007px #FFFFFF;
-    border-radius: 15px;
+    box-shadow: 3.46565px 3.46565px 13.8626px rgba(138, 155, 189, 0.48), -4.33206px -4.33206px 15.5954px #FFFFFF;
+    border-radius: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: left;
-    padding-left: 15px;
-    gap: 50px;
+    grid-template-columns: repeat(3, auto);
+    gap: 5px;
     align-items: center;
-    color: #1A2B52;
+    justify-items: center;
+    justify-content: space-evenly;
 }
-.depa p{
-    font-size: 14px;
-    color: #1A2B52;
+.dep{
+    width: 80px;
+}
+.dep p{
+    font-size: 15px;
+    font-weight: normal;
+    color: #192A53;
     margin: 0;
+}
+.benefit p{
+    font-size: 15px;
+    font-weight: normal;
+    color: #192a5393;
+    margin: 0;
+}
+.icon-g .fa-solid{
+    font-size: 20px;
+    font-weight: bold;
+    color: #192A53;
+}
+.icon-r .fa-solid{
+    font-size: 20px;
+    font-weight: bold;
+    color: #34ADFC;
+}
+.icon-e .fa-solid{
+    font-size: 20px;
+    font-weight: bold;
+    color: #192a5393;
 }
