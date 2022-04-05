@@ -233,7 +233,7 @@
               <div class="skill">
                 <div class="outer">
                   <div class="inner">
-                    <div id="number"></div>
+                    <div id="numbere"></div>
                   </div>
                 </div>
               <!-- alerta -->
@@ -282,7 +282,18 @@
       }, 30);
     </script>
     
-
+    <script>
+      let numbere = document.getElementById("numbere");
+      let countere = 0;
+      setInterval(() => {
+        if (countere == 65) {
+          clearInterval();
+        } else {
+          countere += 1;
+          numbere.innerHTML = countere + "%";
+        }
+      }, 30);
+    </script>
     <script
       src="https://kit.fontawesome.com/88121c0ea5.js"
       crossorigin="anonymous"
