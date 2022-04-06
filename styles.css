@@ -14,6 +14,9 @@
 }
 .navbar-collapse {
   flex-grow: 0 !important;
+  background: #f8f9fa!important;
+  border-radius: 0 0 10px 10px;
+  margin-top: 51px;
 }
 .navbar-nav {
   padding-left: 20px !important;
@@ -65,17 +68,20 @@
 }
 .banner-content h1 {
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
-  font-size: 40px;
-  color: #1a2b52;
+  font-size: 30px;
+  color: #192a53;
   font-weight: bold;
   text-align: center;
 }
 .banner-content p {
   text-align: center;
   margin: 0;
+  margin-bottom: 10px;
   font-size: 20px;
-  color: #1a2b52;
+  font-weight: normal;
+  color: #192a53;
 }
 .button-container {
   display: flex;
@@ -105,15 +111,6 @@
     -4.33px -4.33px 15.6px #ffffff;
 }
 
-.img-container {
-  display: flex;
-  float: right;
-  margin-top: 125px;
-}
-.tex {
-  width: 500px;
-  margin-top: 60px;
-}
 /* CÓMO FUNCIONA */
 
 .title {
